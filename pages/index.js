@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import Page from "@/components/page-template/Page";
-import { Text } from "@chakra-ui/react";
+import { Text, Image } from "@chakra-ui/react";
 import Hero from "@/components/hero/Hero";
 import Prompt from "@/components/prompt/Prompt";
 
@@ -11,7 +11,13 @@ export default function Home() {
     <Page>
       <Hero />
       <Prompt />
-      <Text>What do we do</Text>
+      <Image
+        src="/assets/Photo2.jpg"
+        alt="image2"
+        width="100%"
+        height="495px"
+        objectFit="cover"
+      />
       <Text>Image</Text>
       <Text>Specialization</Text>
       <Text>Learn More about our Services</Text>
