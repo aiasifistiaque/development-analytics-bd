@@ -1,5 +1,7 @@
 import React from "react";
-import { Flex, Box, Text, Button } from "@chakra-ui/react";
+import { Flex, Text, Button } from "@chakra-ui/react";
+import Link from "next/link";
+
 const Hero = () => {
   return (
     <Flex
@@ -8,14 +10,14 @@ const Hero = () => {
       flexDir="column"
       justify="center"
       align={{ base: "center", lg: "flex-start" }}
-      backgroundImage="url(/assets/hero.png)"
+      backgroundImage="url(/assets/hero.jpg)"
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
       backgroundPosition={{
         base: "center",
         lg: "",
       }}
-      h="656px"
+      h="calc(100vh - 66px)"
     >
       <Text
         lineHeight="1.2"
@@ -25,16 +27,18 @@ const Hero = () => {
       >
         Digital Analytics Bangladesh
       </Text>
-      <Button
-        borderRadius="0"
-        bg="black"
-        color="white"
-        h={{ base: "42px", lg: "55px" }}
-        w="173px"
-        fontSize={{ base: "16px", lg: "22px" }}
-      >
-        Learn More
-      </Button>
+      <Link href="/about">
+        <Button
+          borderRadius="0"
+          bg="black"
+          color="white"
+          h={{ base: "42px", lg: "55px" }}
+          w="173px"
+          fontSize={{ base: "16px", lg: "22px" }}
+        >
+          Learn More
+        </Button>
+      </Link>
     </Flex>
   );
 };
