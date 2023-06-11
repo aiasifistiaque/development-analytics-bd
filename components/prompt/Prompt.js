@@ -13,10 +13,10 @@ const Prompt = () => {
             lineHeight="1.2"
             textAlign="center"
           >
-            We are a private consultancy firm in Bangladesh that provides
+            {`We are a private consultancy firm in Bangladesh that provides
             services to health, population, nutrition, agriculture, environment,
             social communication, livestock, socio-economic development, and
-            women and children’ development research.
+            women and children's development research.`}
           </Text>
         </Flex>
         <Link href="/about">

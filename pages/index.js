@@ -5,6 +5,7 @@ import Hero from "@/components/hero/Hero";
 import Prompt from "@/components/prompt/Prompt";
 import Specialization from "@/components/specialization/Specialization";
 import Personnel from "@/components/personnel/Personnel";
+import ServiceDetails from "@/components/service-details/ServiceDetails";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,8 +23,7 @@ export default function Home() {
       />
       <Specialization />
       <Personnel />
-      <Text>Our Services</Text>
-      <Text>Sound Intriguing</Text>
+      <ServiceDetails />
     </Page>
   );
 }
