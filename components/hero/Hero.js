@@ -10,7 +10,7 @@ const Hero = () => {
       flexDir="column"
       justify="center"
       align={{ base: "center", lg: "flex-start" }}
-      backgroundImage="url(/assets/hero.jpg)"
+      backgroundImage="url(/assets/Hero.jpg)"
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
       backgroundPosition={{
