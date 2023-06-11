@@ -119,12 +119,9 @@ const Footer = () => {
         >
           Copyright © 2023, Development Analytics BD | All rights reserved |
           Powered by
-          <ChakraLink
-            isExternal
-            href="https://thinkcrypt.io/"
-            border="1px solid red"
-          >
+          <ChakraLink isExternal href="https://thinkcrypt.io/">
             <Text as="span" color="#EF419B">
+              {" "}
               thinkcrypt.io
             </Text>
           </ChakraLink>
