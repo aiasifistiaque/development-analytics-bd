@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { Box, Flex, Hide, Text, Button, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Hide,
+  Show,
+  Text,
+  Button,
+  Image,
+  IconButton,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+} from "@chakra-ui/react";
+
+import { GiHamburgerMenu } from "react-icons/gi";
+import { GrClose } from "react-icons/gr";
 
 const Navbar = () => {
+  const [display, setDisplay] = useState("none");
   return (
     <Flex
       h="64px"
@@ -34,6 +51,28 @@ const Navbar = () => {
           <Button borderRadius="0">Contact</Button>
         </Link>
       </Hide>
+
+      <Show below="lg">
+        <Menu>
+          <MenuButton
+            as={IconButton}
+            aria-label="Options"
+            icon={<GiHamburgerMenu />}
+            onClick={() => setDisplay("flex")}
+          />
+          <MenuList color="black">
+            <Link href="/about">
+              <MenuItem>About Us</MenuItem>
+            </Link>
+            <Link href="/services">
+              <MenuItem>Services</MenuItem>
+            </Link>
+            <Link href="/contact">
+              <MenuItem>Contact</MenuItem>
+            </Link>
+          </MenuList>
+        </Menu>
+      </Show>
     </Flex>
   );
 };
