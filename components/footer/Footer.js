@@ -11,11 +11,13 @@ const Footer = () => {
       <Flex
         px={{ base: "16px", lg: "128px" }}
         pt={{ base: "32px", lg: "64px" }}
+        pb={{ base: "16px", lg: "32px" }}
+        gap="32px"
         flexDir={{ base: "column", lg: "row" }}
       >
-        <Box border="1px solid red" flex="1">
+        <Box flex="1">
           <Text fontWeight="700" fontSize="1.5rem" mb="10px">
-            VINCENT'S SPHERE
+            Development Analytics BD
           </Text>
           <Text maxW="213px" mb="10px">
             Flat A5, 4/11 Humayun Road, Mohammadpur, Dhaka 1207
@@ -24,23 +26,22 @@ const Footer = () => {
             <Box fontSize="1.2rem">
               <FaPhoneAlt />
             </Box>
-            <Box>0182-8398225</Box>
+            <Box>0171-0871865</Box>
           </Flex>
           <Flex mb="10px" align="center" gap="5px">
             <Box fontSize="1.2rem">
               <GrMail />
             </Box>
-            <Box>info@thinkcrypt.io</Box>
+            <Box>info@developmentanalyticsbd.com</Box>
           </Flex>
         </Box>
         <Flex
           flexDir="row"
-          border="1px solid blue"
           flex="2"
-          justify={{ base: "space-around", lg: "space-evenly" }}
+          justify={{ base: "space-between", lg: "space-evenly" }}
           // gap={{ base: "64px", lg: "128px" }}
         >
-          <Box border="1px solid green">
+          <Box flex="1">
             <Text fontWeight="700" fontSize="1.5rem" mb="10px">
               Navigation
             </Text>
@@ -52,13 +53,13 @@ const Footer = () => {
               {" "}
               <Text mb="10px">About</Text>
             </Link>
-            <Link href="/login">
+            <Link href="/services">
               {" "}
-              <Text mb="10px">Login</Text>
+              <Text mb="10px">Services</Text>
             </Link>
           </Box>
 
-          <Box border="1px solid yellow">
+          <Box flex="1">
             <Text fontWeight="700" fontSize="1.5rem" mb="10px">
               Legal
             </Text>
@@ -70,14 +71,10 @@ const Footer = () => {
               {" "}
               <Text mb="10px">Terms of Service</Text>
             </Link>
-            <Link href="/policy">
-              {" "}
-              <Text mb="10px">Return Policy</Text>
-            </Link>
           </Box>
         </Flex>
 
-        <Box border="1px solid brown" flex="1">
+        <Box flex="1">
           <Text fontWeight="700" fontSize="1.5rem" mb="10px">
             Social
           </Text>

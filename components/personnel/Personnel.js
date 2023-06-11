@@ -21,7 +21,13 @@ const Personnel = () => {
       >
         {data.map((data) => {
           return (
-            <Flex flexDir="column" display="flex" align="center" gap="20px">
+            <Flex
+              flexDir="column"
+              display="flex"
+              align="center"
+              gap="20px"
+              key={data.id}
+            >
               <Image
                 src={data.image}
                 fit="cover"

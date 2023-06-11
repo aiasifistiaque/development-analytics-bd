@@ -37,7 +37,7 @@ const Specialization = () => {
           return (
             <Flex
               key={item.id}
-              w={{ base: "160px", lg: "200px" }}
+              w={{ base: "140px", lg: "200px" }}
               h="200px"
               display="flex"
               flexDir="column"
