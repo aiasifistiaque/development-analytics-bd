@@ -20,7 +20,7 @@ import { useDisclosure } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 
-const NavbarDrawer = () => {
+const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
   return (
@@ -31,7 +31,7 @@ const NavbarDrawer = () => {
       gap="48px"
       bg="black"
       color="white"
-      px={{ base: 4, lg: 32 }}
+      px={{ base: 6, lg: 32 }}
     >
       <Flex flex={1} gap={2} align="center">
         <Image src="./assets/logo.png" alt="logo" />
@@ -56,8 +56,8 @@ const NavbarDrawer = () => {
       </Hide>
 
       <Show below="lg">
-        <Button ref={btnRef} onClick={onOpen}>
-          <GiHamburgerMenu />
+        <Button ref={btnRef} onClick={onOpen} bgColor="transparent">
+          <GiHamburgerMenu color="white" size="24px" />
           <Drawer
             isOpen={isOpen}
             placement="right"
@@ -67,12 +67,18 @@ const NavbarDrawer = () => {
             <DrawerOverlay />
             <DrawerContent minW="100vw">
               <DrawerCloseButton />
-              <DrawerHeader></DrawerHeader>
+              <DrawerHeader>
+                <Link href="/">
+                  <Text fontSize="22px" fontWeight="600">
+                    Home
+                  </Text>
+                </Link>
+              </DrawerHeader>
               <DrawerBody>
                 <Flex
                   flexDir="column"
                   gap="16px"
-                  fontWeight="600"
+                  fontWeight="500"
                   fontSize="20px"
                 >
                   <Link href="/about">
@@ -94,4 +100,4 @@ const NavbarDrawer = () => {
   );
 };
 
-export default NavbarDrawer;
+export default Navbar;

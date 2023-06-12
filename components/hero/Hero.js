@@ -1,12 +1,11 @@
 import React from "react";
 import { Flex, Text, Button } from "@chakra-ui/react";
 import Link from "next/link";
-import { color } from "framer-motion";
 
 const Hero = () => {
   return (
     <Flex
-      px={{ base: "16px", lg: "128px" }}
+      px={{ base: "24px", lg: "128px" }}
       gap={{ base: "58px", lg: "30px" }}
       flexDir="column"
       justify="center"
@@ -36,7 +35,7 @@ const Hero = () => {
           color="white"
           h={{ base: "42px", lg: "55px" }}
           w="173px"
-          fontSize={{ base: "16px", lg: "22px" }}
+          fontSize={{ base: "18px", lg: "20px" }}
           _hover={{
             color: "black",
             background: "white",

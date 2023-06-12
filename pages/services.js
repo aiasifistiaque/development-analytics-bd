@@ -11,7 +11,7 @@ const Services = () => {
     <Page>
       <PageTitle text={"Our Services"} />
       <Box
-        px={{ base: "16px", lg: "128px" }}
+        px={{ base: "24px", lg: "128px" }}
         margin="0 auto"
         mt="77px"
         mb="100px"
@@ -29,14 +29,19 @@ const Services = () => {
           and private sectors. Important sectors or areas of services include:
         </Text>
         <ServiceDetails />
-        <Spacer height="230px" />
-        <Text mt="32px" mb="16px" fontWeight="800" fontSize="22px">
+        <Spacer height={{ base: "100px", lg: "200px" }} />
+        <Text
+          mt={{ base: "0", lg: "32px" }}
+          mb={{ base: "16px", lg: "24px" }}
+          fontWeight="800"
+          fontSize="22px"
+        >
           OUR SPECIALIZATION
         </Text>
       </Box>
 
       <Specialization />
-      <Spacer height="200px" />
+      <Spacer height={{ base: "100px", lg: "200px" }} />
       <IntriguingQuery />
     </Page>
   );

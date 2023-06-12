@@ -5,7 +5,7 @@ import { serviceDetails } from "@/config/dummyData";
 
 const ServiceDetails = () => {
   return (
-    <Flex mx={{ base: "16px", lg: "128px" }} flexDir="column">
+    <Flex mx={{ base: "24px", lg: "128px" }} flexDir="column">
       <Flex
         flexWrap="wrap"
         gap="64px"

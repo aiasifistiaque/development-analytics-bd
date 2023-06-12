@@ -7,12 +7,17 @@ const Personnel = () => {
     setData(personnel);
   }, []);
   return (
-    <Flex flexDir="column" gap="30px" my="150px" align="center">
+    <Flex
+      flexDir="column"
+      gap="30px"
+      my={{ base: "64px", lg: "150px" }}
+      align="center"
+    >
       <Text fontSize="21px" mb="50px">
         Our Key Personnel
       </Text>
       <Flex
-        px={{ base: "16px", lg: "128px" }}
+        px={{ base: "24px", lg: "128px" }}
         maxW="1500px"
         mx="auto"
         flexWrap="wrap"

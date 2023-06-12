@@ -3,13 +3,19 @@ import { Button, Flex, Text, Center } from "@chakra-ui/react";
 import Link from "next/link";
 const Prompt = () => {
   return (
-    <Flex mx={{ base: "16px", lg: "128px" }}>
-      <Center my="200px" flexDir="column" gap="64px" maxW="1080px" mx="auto">
+    <Flex mx={{ base: "24px", lg: "128px" }}>
+      <Center
+        my={{ base: "100px", lg: "200px" }}
+        flexDir="column"
+        gap="64px"
+        maxW="1080px"
+        mx="auto"
+      >
         <Flex flexDir="column" align="center" gap="32px">
           <Text fontSize="21px">WHAT WE DO</Text>
           <Text
-            fontWeight="900"
-            fontSize="24px"
+            fontWeight="700"
+            fontSize={{ base: "20px", lg: "24px" }}
             lineHeight="1.2"
             textAlign="center"
           >

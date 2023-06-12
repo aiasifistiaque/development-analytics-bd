@@ -8,9 +8,9 @@ const Contact = () => {
   return (
     <Page>
       <PageTitle text="Contact Us" />
-      <Flex mx={{ base: "16px", lg: "128px" }}>
+      <Flex mx={{ base: "24px", lg: "128px" }}>
         <Center
-          my="200px"
+          my={{ base: "100px", lg: "200px" }}
           flexDir="column"
           gap={{ base: "32px", lg: "64px" }}
           maxW="1080px"

@@ -13,7 +13,7 @@ const IntriguingQuery = () => {
         flexDir="column"
         maxW="450px"
         gap="26px"
-        mx={{ base: "16px", lg: "128px" }}
+        mx={{ base: "24px", lg: "128px" }}
       >
         <Text fontWeight="900" fontSize="32px">
           Sound intriguiging?

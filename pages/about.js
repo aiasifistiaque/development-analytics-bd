@@ -10,9 +10,9 @@ const About = () => {
       <PageTitle text="About Us" />
       <Box>
         <Box
-          px={{ base: "16px", lg: "128px" }}
+          px={{ base: "24px", lg: "128px" }}
           margin="0 auto"
-          mt="77px"
+          mt={{ base: "32px", lg: "77px" }}
           fontWeight="500"
           fontSize="16px"
           lineHeight="1.5"
@@ -114,7 +114,7 @@ const About = () => {
             </ListItem>
           </UnorderedList>
         </Box>
-        <Spacer h="395px" />
+        <Spacer h={{ base: "64px", lg: "200px" }} />
       </Box>
       <IntriguingQuery />
     </Page>

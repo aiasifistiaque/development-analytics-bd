@@ -10,7 +10,7 @@ const Footer = () => {
       {/* top part footer  */}
 
       <Flex
-        px={{ base: "16px", lg: "128px" }}
+        px={{ base: "24px", lg: "128px" }}
         pt={{ base: "32px", lg: "64px" }}
         pb={{ base: "16px", lg: "32px" }}
         gap="32px"

@@ -11,13 +11,13 @@ const Specialization = () => {
   }, []);
 
   return (
-    <Box px={{ base: "16px", lg: "128px" }}>
+    <Box px={{ base: "24px", lg: "128px" }}>
       <Flex
         maxW="1200px"
         mx="auto"
         flexWrap="wrap"
         justify={{ base: "center", lg: "center" }}
-        gap="60px"
+        gap={{ base: "20px", lg: "60px" }}
       >
         {data.map((item) => {
           return (

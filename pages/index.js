@@ -31,12 +31,18 @@ export default function Home() {
         height="495px"
         objectFit="cover"
       />
-      <Box px={{ base: "16px", lg: "128px" }}>
-        <Center my="200px" flexDir="column" gap="64px" maxW="1080px" mx="auto">
+      <Box px={{ base: "24px", lg: "128px" }}>
+        <Center
+          my={{ base: "64px", lg: "200px" }}
+          flexDir="column"
+          gap={{ base: "32px", lg: "64px" }}
+          maxW="1080px"
+          mx="auto"
+        >
           <Text fontSize="21px">OUR SPECIALIZATION</Text>
           <Text
-            fontWeight="900"
-            fontSize="24px"
+            fontWeight="700"
+            fontSize={{ base: "20px", lg: "24px" }}
             lineHeight="1.2"
             textAlign="center"
           >
@@ -48,7 +54,7 @@ export default function Home() {
         </Center>
       </Box>
       <Specialization />
-      <Flex justify="center" my="100px">
+      <Flex justify="center" my={{ base: "32px", lg: "100px" }}>
         <Link href="/services">
           <Button
             borderRadius="0"
@@ -73,13 +79,19 @@ export default function Home() {
           </Button>
         </Link>
       </Flex> */}
-      <Flex mx={{ base: "16px", lg: "128px" }} flexDir="column">
-        <Center my="100px" flexDir="column" gap="64px" maxW="1080px" mx="auto">
+      <Flex mx={{ base: "24px", lg: "128px" }} flexDir="column">
+        <Center
+          my={{ base: "48px", lg: "100px" }}
+          flexDir="column"
+          gap="64px"
+          maxW="1080px"
+          mx="auto"
+        >
           <Flex flexDir="column" align="center" gap="32px">
             <Text fontSize="21px">OUR SERVICES</Text>
             <Text
-              fontWeight="900"
-              fontSize="24px"
+              fontWeight="700"
+              fontSize={{ base: "20px", lg: "24px" }}
               lineHeight="1.2"
               textAlign="center"
             >
@@ -89,7 +101,7 @@ export default function Home() {
         </Center>
       </Flex>
       <ServiceDetails />
-      <Spacer height="100px" />
+      <Spacer height={{ base: "48px", lg: "100px" }} />
       <IntriguingQuery />
     </Page>
   );
