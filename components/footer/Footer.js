@@ -1,13 +1,37 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
-import { Flex, Box, Text, Link as ChakraLink, Stack } from "@chakra-ui/react";
+import {
+  Flex,
+  Box,
+  Text,
+  Link as ChakraLink,
+  Stack,
+  Center,
+} from "@chakra-ui/react";
 import Link from "next/link";
 
 const Footer = () => {
   return (
     <Flex flexDirection="column" bg="#F5F5F5">
       {/* top part footer  */}
+      <Flex
+        height="251px"
+        px={{ base: "16px", lg: "128px" }}
+        flexDir="column"
+        justify="flex-end"
+        align="center"
+        bgColor="#000000"
+        color="white"
+        textAlign="center"
+      >
+        <Text fontWeight="900" fontSize="24px">
+          DEVELOPMENT ANALYTICS BANGLADESH
+        </Text>
+        <Text fontWeight="400" fontSize="14px">
+          HOUSE 88, ROAD 17/A, BANANI, DHAKA 1213, BANGLADESH
+        </Text>
+      </Flex>
       <Flex
         px={{ base: "16px", lg: "128px" }}
         pt={{ base: "32px", lg: "64px" }}

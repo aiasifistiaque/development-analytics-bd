@@ -32,7 +32,7 @@ const Navbar = () => {
     >
       <Flex flex={1} gap={2} align="center">
         <Image src="./assets/logo.png" alt="logo" />
-        <Text fontWeight="700" fontSize="18px">
+        <Text fontWeight="700" fontSize={{ base: "16px", lg: "18px" }}>
           <Link href="/">Digital Analytics Bangladesh</Link>
         </Text>
       </Flex>
