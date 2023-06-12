@@ -2,14 +2,7 @@ import React from "react";
 import Page from "@/components/page-template/Page";
 import IntriguingQuery from "@/components/intriguing/IntriguingQuery";
 import PageTitle from "@/components/page-title/PageTitle";
-import {
-  Box,
-  Flex,
-  ListItem,
-  Spacer,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
+import { Box, ListItem, Spacer, Text, UnorderedList } from "@chakra-ui/react";
 
 const About = () => {
   return (

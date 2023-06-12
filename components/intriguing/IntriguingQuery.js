@@ -29,6 +29,10 @@ const IntriguingQuery = () => {
           fontWeight="700"
           fontSize="16px"
           padding="24px 36px"
+          _hover={{
+            backdropFilter: "blur(8px)",
+            background: "rgba(255, 255, 255, 0.1)",
+          }}
         >
           CONTACT US
         </Button>

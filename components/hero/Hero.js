@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex, Text, Button } from "@chakra-ui/react";
 import Link from "next/link";
+import { color } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -24,6 +25,7 @@ const Hero = () => {
         fontWeight="800"
         fontSize={{ base: 44, lg: 56 }}
         textAlign={{ base: "center", lg: "left" }}
+        color="black"
       >
         Digital Analytics Bangladesh
       </Text>
@@ -35,6 +37,10 @@ const Hero = () => {
           h={{ base: "42px", lg: "55px" }}
           w="173px"
           fontSize={{ base: "16px", lg: "22px" }}
+          _hover={{
+            color: "black",
+            background: "white",
+          }}
         >
           Learn More
         </Button>

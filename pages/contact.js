@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Flex, Center, Text, Link as ChakraLink } from "@chakra-ui/react";
+import { Flex, Center, Text } from "@chakra-ui/react";
 import Page from "@/components/page-template/Page";
 import PageTitle from "@/components/page-title/PageTitle";
 
@@ -9,14 +9,24 @@ const Contact = () => {
     <Page>
       <PageTitle text="Contact Us" />
       <Flex mx={{ base: "16px", lg: "128px" }}>
-        <Center my="200px" flexDir="column" gap="64px" maxW="1080px" mx="auto">
-          <Flex flexDir="column" align="center" gap="44px">
-            <Text fontWeight="800" fontSize="44px">
+        <Center
+          my="200px"
+          flexDir="column"
+          gap={{ base: "32px", lg: "64px" }}
+          maxW="1080px"
+          mx="auto"
+        >
+          <Flex
+            flexDir="column"
+            align="center"
+            gap={{ base: "22px", lg: "44px" }}
+          >
+            <Text fontWeight="800" fontSize={{ base: "30px", lg: "44px" }}>
               Contact Us Today
             </Text>
             <Text
               fontWeight="500"
-              fontSize="24px"
+              fontSize={{ base: "16px", lg: "24px" }}
               lineHeight="1.2"
               textAlign="center"
             >
@@ -31,7 +41,7 @@ const Contact = () => {
 
           <Text
             fontWeight="500"
-            fontSize="24px"
+            fontSize={{ base: "16px", lg: "24px" }}
             lineHeight="1.2"
             textAlign="center"
           >

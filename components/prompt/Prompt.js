@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Flex, Text, Center } from "@chakra-ui/react";
+import { Button, Flex, Text, Center } from "@chakra-ui/react";
 import Link from "next/link";
 const Prompt = () => {
   return (
@@ -20,7 +20,17 @@ const Prompt = () => {
           </Text>
         </Flex>
         <Link href="/about">
-          <Button borderRadius="0" color="white" bg="black" h="55px" w="272px">
+          <Button
+            borderRadius="0"
+            color="white"
+            bg="black"
+            h="55px"
+            w="272px"
+            _hover={{
+              color: "black",
+              background: "white",
+            }}
+          >
             Learn More about us
           </Button>
         </Link>

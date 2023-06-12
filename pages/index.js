@@ -1,7 +1,15 @@
 import { Inter } from "next/font/google";
 import Page from "@/components/page-template/Page";
 import Link from "next/link";
-import { Text, Image, Flex, Center, Box, Button } from "@chakra-ui/react";
+import {
+  Text,
+  Image,
+  Flex,
+  Center,
+  Box,
+  Button,
+  Spacer,
+} from "@chakra-ui/react";
 import Hero from "@/components/hero/Hero";
 import Prompt from "@/components/prompt/Prompt";
 import Specialization from "@/components/specialization/Specialization";
@@ -42,12 +50,29 @@ export default function Home() {
       <Specialization />
       <Flex justify="center" my="100px">
         <Link href="/services">
-          <Button borderRadius="0" color="white" bg="black" h="55px" w="272px">
+          <Button
+            borderRadius="0"
+            color="white"
+            bg="black"
+            h="55px"
+            w="272px"
+            _hover={{
+              color: "black",
+              background: "white",
+            }}
+          >
             Learn More about our services
           </Button>
         </Link>
       </Flex>
       <Personnel />
+      {/* <Flex justify="center" my="100px">
+        <Link href="/team">
+          <Button borderRadius="0" color="white" bg="black" h="55px" w="272px">
+            Learn More about our team
+          </Button>
+        </Link>
+      </Flex> */}
       <Flex mx={{ base: "16px", lg: "128px" }} flexDir="column">
         <Center my="100px" flexDir="column" gap="64px" maxW="1080px" mx="auto">
           <Flex flexDir="column" align="center" gap="32px">
@@ -58,12 +83,13 @@ export default function Home() {
               lineHeight="1.2"
               textAlign="center"
             >
-              {`Our team members comprised of a group of sound and dependable professionals. The team is fully capable of handling contracts and projects of any size. Over the years, we have been active in establishing linkages and rapport with many potential resource personnel and organisations.  Our services includes`}
+              {`Our team members comprised of a group of sound and dependable professionals. The team is fully capable of handling contracts and projects of any size. Over the years, we have been active in establishing linkages and rapport with many potential resource personnel and organizations.  Our services includes`}
             </Text>
           </Flex>
         </Center>
       </Flex>
       <ServiceDetails />
+      <Spacer height="100px" />
       <IntriguingQuery />
     </Page>
   );

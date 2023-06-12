@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Box, Flex, Text, Center, Button } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { AiOutlineUpSquare } from "react-icons/ai";
 import { services } from "@/config/dummyData";
-import Link from "next/link";
 
 const Specialization = () => {
   const [data, setData] = useState([]);

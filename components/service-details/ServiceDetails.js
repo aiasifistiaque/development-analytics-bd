@@ -1,8 +1,8 @@
 import React from "react";
-import { Flex, Center, Text, Button, Box } from "@chakra-ui/react";
+import { Flex, Text, Box } from "@chakra-ui/react";
 import { AiOutlineUpSquare } from "react-icons/ai";
 import { serviceDetails } from "@/config/dummyData";
-import Link from "next/link";
+
 const ServiceDetails = () => {
   return (
     <Flex mx={{ base: "16px", lg: "128px" }} flexDir="column">
