@@ -6,6 +6,7 @@ import Prompt from "@/components/prompt/Prompt";
 import Specialization from "@/components/specialization/Specialization";
 import Personnel from "@/components/personnel/Personnel";
 import ServiceDetails from "@/components/service-details/ServiceDetails";
+import IntriguingQuery from "@/components/intriguing/IntriguingQuery";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function Home() {
       <Specialization />
       <Personnel />
       <ServiceDetails />
+      <IntriguingQuery />
     </Page>
   );
 }
