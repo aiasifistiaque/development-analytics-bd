@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Center, Flex, Text } from "@chakra-ui/react";
+import Link from "next/link";
 const IntriguingQuery = () => {
   return (
     <Flex
@@ -21,21 +22,23 @@ const IntriguingQuery = () => {
         <Text fontSize="16px" fontWeight="500" textAlign="center">
           CONTACT US TODAY TO KNOW MORE ABOUT OUR SERVICES AND CONNECT!
         </Text>
-        <Button
-          border="2px solid white"
-          borderRadius="none"
-          background="transparent"
-          color="white"
-          fontWeight="700"
-          fontSize="16px"
-          padding="24px 36px"
-          _hover={{
-            backdropFilter: "blur(8px)",
-            background: "rgba(255, 255, 255, 0.1)",
-          }}
-        >
-          CONTACT US
-        </Button>
+        <Link href="/contact">
+          <Button
+            border="2px solid white"
+            borderRadius="none"
+            background="transparent"
+            color="white"
+            fontWeight="700"
+            fontSize="16px"
+            padding="24px 36px"
+            _hover={{
+              backdropFilter: "blur(8px)",
+              background: "rgba(255, 255, 255, 0.1)",
+            }}
+          >
+            CONTACT US
+          </Button>
+        </Link>
       </Center>
     </Flex>
   );
