@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Flex, Image } from "@chakra-ui/react";
-import { iconDataWhite } from "@/config/dummyDataExperimental";
-const IconsContainerWhite = () => {
-  const [data, setData] = useState(iconDataWhite);
+import { iconData } from "@/config/dummyDataExperimental";
+
+const IconsContainerBlack = () => {
+  const [data, setData] = useState(iconData);
   return (
     <Flex
       flexWrap="wrap"
-      background="rgba(43, 64, 83, 0.7)"
       borderRadius="11px"
       justify="space-around"
       gap="32px"
@@ -24,4 +24,4 @@ const IconsContainerWhite = () => {
   );
 };
 
-export default IconsContainerWhite;
+export default IconsContainerBlack;

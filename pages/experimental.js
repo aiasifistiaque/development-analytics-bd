@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Flex, Box, Text, Image } from "@chakra-ui/react";
 import PageExperimental from "@/components/experimental-components/PageExperimental";
 import HeroExperimental from "@/components/experimental-components/HeroExperimental";
-import IconsContainer from "@/components/experimental-components/IconsContainerWhite";
 import ServicesExperimental from "@/components/experimental-components/ServicesExperimental";
 import { iconData } from "@/config/dummyDataExperimental";
 const Experimental = () => {
@@ -40,8 +39,8 @@ const Experimental = () => {
         <Flex justify="space-around">
           {data.map((icon) => {
             return (
-              <Flex flex={1} justify="center" align="center">
-                <Image key={icon.id} src={icon.icon} alt={icon.id} />
+              <Flex flex={1} justify="center" align="center" key={icon.id}>
+                <Image src={icon.icon} alt={icon.id} />
               </Flex>
             );
           })}
